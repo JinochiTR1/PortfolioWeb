@@ -1,4 +1,3 @@
-import React from 'react';
 import { HeroSection } from './sections/heroSection';
 import { ProjectsSection } from './sections/projectsSection';
 import { NavigationBar } from './components/navigationBar';
