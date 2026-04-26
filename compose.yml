@@ -1,0 +1,13 @@
+services:
+  portfolio:
+    build: .
+    container_name: gw_portfolio
+    restart: always
+    # Nginx in the container exposes port 80 natively. 
+    # Caddy will route traffic to this port via the internal Docker network.
+    networks:
+      - caddy_net
+
+networks:
+  caddy_net:
+    external: true
