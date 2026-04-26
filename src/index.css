@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* * Enable manual dark mode via class.
+ * Tailwind v4 defaults to system preference, so we override it to listen to the .dark class on the html element. 
+ */
+@custom-variant dark (&:where(.dark, .dark *));
