@@ -11,14 +11,14 @@ import { SectionTransition } from './components/SectionTransition';
 function App() {
   return (
     // Hlavní obal aplikace s plynulým přechodem barev pro dark mode
-    // Přidáno 'relative' a 'overflow-x-hidden', které 100% zlikvidují horizontální scroll
-    <div className="relative overflow-x-hidden min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-500 font-sans selection:bg-violet-500/30 ">
+    // ZMĚNA 1: min-h-[100dvh] místo min-h-screen (řeší iOS Safari adresní lištu)
+    // ZMĚNA 2: přidáno transform-gpu (využije grafický čip pro plynulejší scrollování)
+    <div className="relative overflow-x-hidden min-h-dvh transform-gpu bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-500 font-sans selection:bg-violet-500/30 ">
       
       <NavigationBar />
-
+      
       <main>
         <AnimatedBackground />
-        {/* Odstraněn duplicitní NavigationBar */}
         <HeroSection />
         <SectionTransition variant="fuchsia" />
         <AboutMeSection />

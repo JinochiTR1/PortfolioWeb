@@ -31,13 +31,13 @@ export const SectionTransition: React.FC<SectionTransitionProps> = ({ variant = 
     <div className="relative w-full h-32 sm:h-48 -my-16 sm:-my-24 pointer-events-none z-10 flex items-center justify-center overflow-visible">
       
       {/* Temný stínový pás pro plynulé navázání - simuluje hustotu a hloubku vesmíru */}
-      <div className="absolute w-full h-[120px] bg-gradient-to-b from-transparent via-slate-950/60 to-transparent blur-[20px]" />
+      <div className="absolute w-full h-30 bg-linear-to-b from-transparent via-slate-950/60 to-transparent blur-[20px]" />
       
       {/* Jádro mlhoviny - pulzující barevná esence */}
-      <div className={`absolute w-[120vw] max-w-[1500px] h-[100px] ${styles.core} blur-[80px] sm:blur-[120px] mix-blend-screen rounded-[100%] ${styles.position} animate-[pulse_8s_ease-in-out_infinite]`} />
+      <div className={`absolute w-[120vw] max-w-375 h-25 ${styles.core} blur-[80px] sm:blur-[120px] mix-blend-screen rounded-[100%] ${styles.position} animate-[pulse_8s_ease-in-out_infinite]`} />
       
       {/* Vnější aura (Halo) - doplňková barva, která pulzuje v reverzním rytmu */}
-      <div className={`absolute w-[80vw] max-w-[1000px] h-[150px] ${styles.halo} blur-[100px] mix-blend-screen rounded-full animate-[pulse_12s_ease-in-out_infinite_reverse]`} />
+      <div className={`absolute w-[80vw] max-w-250 h-37.5 ${styles.halo} blur-[100px] mix-blend-screen rounded-full animate-[pulse_12s_ease-in-out_infinite_reverse]`} />
       
     </div>
   );

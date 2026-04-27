@@ -6,7 +6,7 @@ export const SkillsSection: React.FC = () => {
     <section id="skills" className="relative py-24 sm:py-32 overflow-hidden">
       
       {/* Subtilní fialová záře na pravé straně pro kontinuitu designu */}
-      <div className="absolute top-1/2 right-[-10%] w-[500px] h-[500px] bg-violet-400/5 dark:bg-violet-600/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 right-[-10%] w-125 h-125 bg-violet-400/5 dark:bg-violet-600/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center mb-16">

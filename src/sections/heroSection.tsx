@@ -11,7 +11,7 @@ export const HeroSection: React.FC = () => {
         {/* Pravý akcent (více do fuchsiové) */}
         <div className="absolute top-[30%] right-[10%] w-[400px] h-[400px] bg-fuchsia-400/20 dark:bg-fuchsia-600/20 rounded-full blur-[100px]" />
         {/* Spodní záře (hlubší indigová) */}
-        <div className="absolute bottom-[-10%] left-[40%] w-[600px] h-[600px] bg-indigo-400/20 dark:bg-indigo-700/20 rounded-full blur-[150px]" />
+        <div className="absolute bottom-[-10%] left-[40%] w-150 h-150 bg-indigo-400/20 dark:bg-indigo-700/20 rounded-full blur-[150px]" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center">

@@ -5,7 +5,7 @@ export const ContactSection: React.FC = () => {
     <section id="contact" className="relative py-24 sm:py-32 overflow-hidden bg-slate-50 dark:bg-slate-950">
       
       {/* Centrální záře ukotvující spodek stránky */}
-      <div className="absolute bottom-[-20%] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-violet-600/10 dark:bg-violet-500/10 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute bottom-[-20%] left-1/2 -translate-x-1/2 w-150 h-150 bg-violet-600/10 dark:bg-violet-500/10 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center mb-16">
