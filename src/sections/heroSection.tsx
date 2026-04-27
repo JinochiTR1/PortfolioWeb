@@ -21,21 +21,21 @@ export const HeroSection: React.FC = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-violet-500"></span>
           </span>
-          Systém běží na Hetzner VPS
+          System is running on Hetzner VPS
         </div>
 
         {/* Hlavní nadpis */}
         <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight mb-6">
-          Vítejte v <br className="hidden sm:block" />
+          Welcome to my Portfolio <br className="hidden sm:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-fuchsia-500 dark:from-violet-400 dark:to-fuchsia-400 drop-shadow-sm">
-            mé digitální esenci
+            Explore the universe of my projects and skills
           </span>
         </h1>
 
         {/* Popis */}
         <p className="mt-6 text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-          Tvořím aplikace, hry a nástroje s důrazem na čistou architekturu. 
-          Zkoumejte mé projekty, od Docker kontejnerů až po React frontendy.
+          I create applications, games, and tools with a focus on clean architecture. 
+          Explore my projects, from Docker containers to React frontends.
         </p>
 
         {/* Call to action tlačítka */}
@@ -44,13 +44,13 @@ export const HeroSection: React.FC = () => {
             href="#projects"
             className="px-8 py-4 rounded-xl bg-violet-600 text-white font-bold text-lg transition-all duration-300 hover:bg-violet-500 hover:-translate-y-1 shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.5)]"
           >
-            Prozkoumat projekty
+            Explore Projects
           </a>
           <a
             href="#about"
             className="px-8 py-4 rounded-xl bg-white dark:bg-slate-900 text-slate-900 dark:text-white font-bold text-lg border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:bg-slate-50 dark:hover:bg-slate-800 hover:-translate-y-1"
           >
-            Více o mně
+            Learn More About Me
           </a>
         </div>
       </div>

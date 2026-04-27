@@ -15,7 +15,8 @@ export const NavigationBar: React.FC = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/70 dark:bg-slate-950/70 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors duration-500">
+    // Zvýšeno rozostření (backdrop-blur-xl), extrémně průhledné pozadí a jemná neonová linka zespodu
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/20 dark:bg-[#020617]/40 backdrop-blur-xl border-b border-white/20 dark:border-violet-500/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
@@ -25,7 +26,7 @@ export const NavigationBar: React.FC = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-fuchsia-500 group-hover:opacity-80 transition-opacity">
                 Jinochi
               </span>
-              <span className="ml-1">Hub</span>
+              <span className="ml-1 tracking-wider">Hub</span>
             </a>
           </div>
 
@@ -36,7 +37,8 @@ export const NavigationBar: React.FC = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-sm font-medium text-slate-600 hover:text-violet-600 dark:text-slate-300 dark:hover:text-violet-400 transition-colors"
+                  // Přidán neonový drop-shadow při najetí myší pro kyberpunkový feeling
+                  className="text-sm font-medium text-slate-700 hover:text-violet-600 dark:text-slate-300 dark:hover:text-violet-300 hover:drop-shadow-[0_0_8px_rgba(139,92,246,0.8)] transition-all duration-300"
                 >
                   {link.name}
                 </a>
@@ -44,7 +46,7 @@ export const NavigationBar: React.FC = () => {
             </div>
             
             {/* Přepínač témat (oddělený jemnou linkou) */}
-            <div className="pl-6 border-l border-slate-200 dark:border-slate-700">
+            <div className="pl-6 border-l border-slate-300/50 dark:border-slate-700/50">
               <ThemeToggle />
             </div>
           </div>
@@ -54,7 +56,7 @@ export const NavigationBar: React.FC = () => {
             <ThemeToggle />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none transition-colors"
+              className="p-2 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-white/50 dark:hover:bg-slate-800/50 focus:outline-none transition-colors"
               aria-label="Otevřít menu"
             >
               {isMobileMenuOpen ? (
@@ -73,16 +75,16 @@ export const NavigationBar: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobilní Rozbalovací Menu */}
+      {/* Mobilní Rozbalovací Menu - Upraveno do skleněného designu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white/95 dark:bg-slate-950/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 absolute w-full">
-          <div className="px-4 pt-2 pb-6 space-y-2 shadow-xl">
+        <div className="md:hidden bg-white/80 dark:bg-[#020617]/80 backdrop-blur-xl border-b border-white/20 dark:border-violet-500/20 absolute w-full">
+          <div className="px-4 pt-2 pb-6 space-y-2 shadow-2xl">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)} // Zavře menu po kliknutí
-                className="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-violet-600 hover:bg-violet-50 dark:text-slate-300 dark:hover:text-violet-400 dark:hover:bg-slate-900/50 transition-colors"
+                className="block px-3 py-3 rounded-xl text-base font-medium text-slate-800 hover:text-violet-700 hover:bg-violet-500/10 dark:text-slate-200 dark:hover:text-violet-300 dark:hover:bg-violet-500/20 transition-all duration-300"
               >
                 {link.name}
               </a>

@@ -3,7 +3,7 @@ import { skillsList } from '../data/skillsList';
 
 export const SkillsSection: React.FC = () => {
   return (
-    <section id="skills" className="relative py-24 sm:py-32 overflow-hidden bg-slate-50/50 dark:bg-slate-950/50">
+    <section id="skills" className="relative py-24 sm:py-32 overflow-hidden">
       
       {/* Subtilní fialová záře na pravé straně pro kontinuitu designu */}
       <div className="absolute top-1/2 right-[-10%] w-[500px] h-[500px] bg-violet-400/5 dark:bg-violet-600/5 rounded-full blur-[120px] pointer-events-none" />

@@ -2,10 +2,10 @@ import React from 'react';
 
 export const AboutMeSection: React.FC = () => {
   return (
-    <section id="about" className="relative py-24 sm:py-32 overflow-hidden bg-white dark:bg-slate-900/50">
+    <section id="about" className="relative py-24 sm:py-32 overflow-hidden">
       
       {/* Subtilní fuchsiová záře na levé straně pro balanc */}
-      <div className="absolute top-1/2 left-[-10%] w-[500px] h-[500px] bg-fuchsia-400/5 dark:bg-fuchsia-600/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-[-10%] w-125 h-125 bg-fuchsia-400/5 dark:bg-fuchsia-600/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -36,9 +36,9 @@ export const AboutMeSection: React.FC = () => {
           {/* Pravý sloupec: Fotografie / Vizuál */}
           <div className="relative mx-auto w-full max-w-md lg:max-w-none">
             {/* Dekorativní rámeček se září */}
-            <div className="absolute -inset-2 rounded-2xl bg-gradient-to-tr from-violet-500 to-fuchsia-500 opacity-20 blur-lg transition-opacity duration-500 group-hover:opacity-40"></div>
+            <div className="absolute -inset-2 rounded-2xl bg-to-tr from-violet-500 to-fuchsia-500 opacity-20 blur-lg transition-opacity duration-500 group-hover:opacity-40"></div>
             
-            <div className="relative aspect-square sm:aspect-[4/3] lg:aspect-square rounded-2xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 overflow-hidden flex items-center justify-center shadow-xl shadow-violet-900/5">
+            <div className="relative aspect-square sm:aspect-4/3 lg:aspect-square rounded-2xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 overflow-hidden flex items-center justify-center shadow-xl shadow-violet-900/5">
               
               {/* TOTO JE PLACEHOLDER. Až budeš mít fotku, můžeš tento div nahradit tagem <img /> */}
               <div className="text-center p-8">
