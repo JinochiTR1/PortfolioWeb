@@ -176,7 +176,7 @@ const GalaxySystem = ({ galaxy, isSelected, onClick }: { galaxy: TechGalaxy, isS
   const lightRef = useRef<THREE.PointLight>(null);
   const [hovered, setHover] = useState(false);
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     if (coreRef.current) coreRef.current.rotation.y += 0.001;
     
     if (lightRef.current) {
