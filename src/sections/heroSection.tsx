@@ -16,13 +16,13 @@ export const HeroSection: React.FC = () => {
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center">
         {/* Subtilní tag nad nadpisem */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300 text-sm font-medium mb-8 border border-violet-200 dark:border-violet-800/50">
+        {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300 text-sm font-medium mb-8 border border-violet-200 dark:border-violet-800/50">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-violet-500"></span>
           </span>
           System is running on Hetzner VPS
-        </div>
+        </div> */}
 
         {/* Hlavní nadpis */}
         <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight mb-6">

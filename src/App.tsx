@@ -13,7 +13,7 @@ function App() {
     // Hlavní obal aplikace s plynulým přechodem barev pro dark mode
     // ZMĚNA 1: min-h-[100dvh] místo min-h-screen (řeší iOS Safari adresní lištu)
     // ZMĚNA 2: přidáno transform-gpu (využije grafický čip pro plynulejší scrollování)
-    <div className="relative overflow-x-hidden min-h-dvh transform-gpu bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-500 font-sans selection:bg-violet-500/30 ">
+    <div className="relative overflow-x-hidden min-h-dvh bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-500 font-sans selection:bg-violet-500/30 ">
       
       <NavigationBar />
       
@@ -22,10 +22,10 @@ function App() {
         <HeroSection />
         <SectionTransition variant="fuchsia" />
         <AboutMeSection />
-        <SectionTransition variant="indigo" />
-        <ProjectsSection />
         <SectionTransition variant="violet" />
         <SkillsSection />
+        <SectionTransition variant="indigo" />
+        <ProjectsSection />
         <SectionTransition variant="fuchsia" />
         <ContactSection />
         <FooterSection />
