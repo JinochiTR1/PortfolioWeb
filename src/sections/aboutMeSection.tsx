@@ -23,7 +23,7 @@ export const AboutMeSection: React.FC = () => {
                 Většinu svých projektů, od her jako Void Suvereign až po různé utility, hostuji na vlastním Hetzner VPS. Zastávám kontejnerizaci pomocí <strong className="font-semibold text-violet-600 dark:text-violet-400">Dockeru</strong> a plynulé nasazování přes CaddyProxy. Na frontendu nedám dopustit na moderní React s TypeScriptem a Tailwindem.
               </p>
               <p>
-                Rád optimalizuji procesy, dbám na DRY (Don't Repeat Yourself) pravidla a snažím se, aby můj kód byl nejen funkční, ale i dobře čitelný a dlouhodobě udržitelný.
+                Rád optimalizuji procesy a dbám na DRY (Don't Repeat Yourself) pravidla. Věřím, že čistá architektura pod kapotou je klíčem k vytvoření plynulého a intuitivního UX na povrchu – což je zásadní zejména při vývoji komplexních nástrojů, které mají uživatelům maximálně usnadnit práci.
               </p>
             </div>
 
